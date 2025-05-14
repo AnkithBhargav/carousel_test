@@ -15,7 +15,7 @@ export const images = [
   {
     url: "/images/photo3.avif",
     title: "Third Slide Label",
-    desc: "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+    desc: "Praesent commodo cursus magna.",
   },
 ];
 

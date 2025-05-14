@@ -1,12 +1,29 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
-  display: flex; /* Enable flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  min-height: 100vh; /* Ensure body takes at least the full viewport height */
-  background-color: #f4f4f4;
+  height: 100vh;
+  margin: 0; /* Remove default margin for a cleaner layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+  background-size: 400% 400%; /* Slightly increase the gradient size for smoother transitions */
+  animation: gradientShift 15s ease-in-out infinite; /* Adjust animation duration for a more relaxed effect */
+  font-family: 'Arial', sans-serif; /* Ensure consistent font rendering */
+  color: #ffffff; /* Set default text color for better contrast */
+  overflow: hidden; /* Prevent scrollbars from appearing */
 }
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 #root {
   width: 100%; /* Allow the root div to take full width */
@@ -16,12 +33,20 @@ body {
 
 .carousel-wrapper {
   position: relative;
-  width: 80%; /* Adjust as needed */
-  max-width: 600px; /* Optional max width */
-  margin: 20px auto; /* Add auto margins for centering within its container */
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto; /* Add some spacing around the carousel */
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Slightly larger border radius for a softer look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow for depth */
+  background: #f7f4f4; /* Add a subtle background color */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Add a light border for definition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.carousel-wrapper:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 /* ... (rest of Carousel.css remains the same) ... */
