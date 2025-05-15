@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "./components/carousel"; // Keep your carousel
 import "./App.css"; // Optional if you're using it
-import Navbar from "./Navbar";
+
 
 function App() {
   const handleClick = () => {
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", padding: "20px","width" : "100vw", "height": "100vh" }}>
-      <Navbar />
+      
       
       {/* Carousel stays here */}
       <Carousel />

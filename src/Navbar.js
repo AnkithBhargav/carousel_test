@@ -13,7 +13,6 @@ export default function Navbar() {
     </nav>
   )
 }
-
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
