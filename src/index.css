@@ -10,7 +10,7 @@ body {
   font-family: var(--font-family, Arial, sans-serif);
   body:hover {
     animation: color 12s ease-in-out infinite;
-  animation: color 12s ease-in-out infinite;
+    animation: color 12s ease-in-out infinite;
   font-family: Arial, sans-serif;
 }
 }
@@ -51,4 +51,37 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
-/* ... (rest of Carousel.css remains the same) ... */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav .site-title {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav ul li {
+  padding: 5px 10px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li.active a {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}

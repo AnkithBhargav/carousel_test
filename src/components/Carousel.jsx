@@ -69,7 +69,7 @@ const Carousel = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="welcome-message">Welcome</div>
+      <div className="welcome-message">CAROUSEL DEMO</div>
       <div className="carousel-container">
         {images.map((img, i) => (
           <div

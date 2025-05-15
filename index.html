@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cross Fade Carousel</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-      background-color: #f0f0f0;
-    }
-    #root {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%; /* Make root take full height of body for centering content */
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cross Fade Carousel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif; /* Aesthetic font */
+            background-color: #eae7dc; /* Soft beige background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #2b2a27; /* Muted gray color */
+            margin-top: 20px;
+            font-weight: 600; /* Slightly bold for emphasis */
+        }
+        #root {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+    </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <h1>Cross Fade Carousel Demo</h1>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
