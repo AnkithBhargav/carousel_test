@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Carousel.css";
 
+
+
 export const images = [
   {
     url: "/images/photo1.avif",

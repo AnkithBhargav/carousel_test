@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 const industries = [
   {
     title: "Banking, Financial Services & Insurance",
-    image: "/images/industry1.jpg",
+    image: "/images/image 1.avif",
   },
   {
     title: "Travel Logistics",
-    image: "/images/industry2.jpg",
+    image: "/images/image 2.avif",
   },
   {
     title: "Public Sector",
-    image: "/images/industry3.jpg",
+    image: "/images/image 3.avif",
   },
 ];
 
