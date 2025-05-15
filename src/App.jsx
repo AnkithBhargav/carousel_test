@@ -1,24 +1,28 @@
+// src/App.jsx
 import React from "react";
-import Carousel from "./components/carousel"; // Keep your carousel
-import "./App.css"; // Optional if you're using it
-
+import { useNavigate } from "react-router-dom";
+import Carousel from "./components/Carousel";
 
 function App() {
+  const navigate = useNavigate();
+
   const handleClick = () => {
+    // Show alert (optional)
     alert("Button clicked!");
+    // Navigate to /second page
+    navigate("/second");
   };
 
   return (
-    <div style={{ textAlign: "center", padding: "20px","width" : "100vw", "height": "100vh" }}>
-      
-      
-      {/* Carousel stays here */}
+    <div style={{ textAlign: "center", padding: "20px", width: "100%" }}>
       <Carousel />
-
-      {/* Simple Button */}
-      <button 
+      <button
         onClick={handleClick}
-        style={{ marginTop: "20px", padding: "10px 20px", fontSize: "16px" }}
+        style={{
+          marginTop: "20px",
+          padding: "10px 20px",
+          fontSize: "16px",
+        }}
       >
         Click Me
       </button>
