@@ -1,29 +1,31 @@
 body {
   height: 100vh;
-  margin: 0; /* Remove default margin for a cleaner layout */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
-  background-size: 400% 400%; /* Slightly increase the gradient size for smoother transitions */
-  animation: gradientShift 15s ease-in-out infinite; /* Adjust animation duration for a more relaxed effect */
-  font-family: 'Arial', sans-serif; /* Ensure consistent font rendering */
-  color: #ffffff; /* Set default text color for better contrast */
-  overflow: hidden; /* Prevent scrollbars from appearing */
+  background: linear-gradient(45deg, #a546f3, #4a37df);
+  background-size: 200% 200%;
+  animation: none;
+  /* Ensure this aligns with the design system */
+  font-family: var(--font-family, Arial, sans-serif);
+  body:hover {
+    animation: color 12s ease-in-out infinite;
+  animation: color 12s ease-in-out infinite;
+  font-family: Arial, sans-serif;
+}
 }
 
-@keyframes gradientShift {
+@keyframes color {
   0% {
-    background-position: 0% 50%;
+      background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%;
+      background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+      background-position: 0% 50%;
   }
 }
-
 
 #root {
   width: 100%; /* Allow the root div to take full width */

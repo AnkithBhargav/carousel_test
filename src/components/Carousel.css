@@ -1,17 +1,19 @@
 .carousel-wrapper {
   position: relative;
-  width: 80%;
-  max-width: 600px;
-  margin: 20px auto;
+  width: 90%; /* Slightly wider for better visibility */
+  max-width: 700px; /* Increased max-width for a more spacious layout */
+  margin: 30px auto; /* Adjusted margin for better spacing */
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Softer corners for a modern look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a cleaner, premium feel */
+  background-color: #f9f9f9; /* Light background for a clean appearance */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for added definition */
 }
 
 .welcome-message {
   padding: 15px;
   text-align: center;
-  background-color: #0e0d0d;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent smooth background */
   border-bottom: 1px solid #eee;
   font-family: 'Arial', sans-serif; /* Clean and modern font */
   font-size: 18px; /* Slightly larger for better readability */
@@ -22,7 +24,12 @@
 
 .carousel-container {
   position: relative;
-  height: 300px; /* Adjust as needed */
+  height: 320px; /* Slightly taller for a more immersive feel */
+  background: linear-gradient(135deg, #2c2c2c, #4a4a4a); /* Enhanced gradient for a sleek appearance */
+  border-radius: 12px; /* Softer corners for a modern touch */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Deeper shadow for a premium look */
+  overflow: hidden; /* Keeps content neatly contained */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for added definition */
 }
 
 .carousel-slide {
@@ -34,10 +41,16 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease; /* Smooth fade-in and subtle zoom effect */
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(1); /* Default scale */
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: scale(1.05); /* Slight zoom for an immersive effect */
 }
 
 .carousel-slide.active {
@@ -129,11 +142,11 @@
   transform: scale(1.2); /* Slightly enlarge on hover for better interactivity */
 }
 
-.carousel-indicators button.active {
+.carousel-indicators button.active { /* Active indicator */
   background-color: #555;
 }
 
-.carousel-indicators button:hover {
+.carousel-indicators button:hover {  /* Hover effect */
   background-color: #888;
 }
 
