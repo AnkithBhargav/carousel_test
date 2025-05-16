@@ -12,7 +12,7 @@ function App() {
     // Show alert (optional)
     alert("Button clicked!");
     // Navigate to /second page
-    navigate("/second");
+    // navigate("/second");
   };
 
   return (
